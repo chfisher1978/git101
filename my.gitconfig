@@ -1,0 +1,35 @@
+[alias]
+	bra  = branch -a
+	brr  = branch -r
+	brad  = branch -d
+	braD  = branch -D
+	cia  = commit -a
+	co   = checkout
+	cob  = checkout -b
+	fo   = fetch origin
+	last =  log -1 HEAD
+	last1v = log -1 HEAD
+	last1 = log -1 HEAD  --oneline
+	last10v = log -10 HEAD
+	last1s = log -10 HEAD  --oneline  --reverse
+	last100 = log -100 HEAD  --oneline  --reverse
+	lg = log  --graph  --abbrev-commit --date=relative --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	lg2 = log  --graph  --abbrev-commit --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	log1 = log --oneline --reverse -1
+	lo1  = log  --oneline  --reverse
+	lol = log --oneline --reverse
+	mffo = merge --ff-only
+	s = status
+	st = status -s
+	unstage = reset HEAD --
+	wtf  = status
+[core]
+	autocrlf = true
+	editor = atom --wait
+[push]
+	default = simple
+[user]
+	name = Christopher Fisher
+	email = chris.fisher.cf1@roche.com
+[commit]
+	template = ~/.git_commit_msg.txt
